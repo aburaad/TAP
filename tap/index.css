@@ -1,0 +1,142 @@
+.body {
+    font-family: Georgia, serif;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.nav-bar li .tab-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar li .tab-wrapper .material-icons {
+    margin-right: 5px;
+}
+
+.nav-bar li:hover {
+    color: #D1884F;
+}
+
+.nav-bar li.selected {
+    color: #D1884F; /* Change the text color */
+}
+
+.main-page-container {
+    padding: 70px 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.primary {
+    color: #3BBADB;
+}
+
+.title {
+    font-size: 35px;
+}
+
+.secondary {
+    color: #D1884F;
+}
+
+.intro-title {
+    font-size: 70px;
+    color: #008AAA;
+    font-weight: 700;
+}
+
+.img {
+    width: 410px;
+    height: 450px;
+    object-fit: cover;
+    border-bottom-left-radius: 200px;
+}
+
+.img-shadow {
+    box-shadow: -16px 2px #3BBADB;
+}
+
+.buttons-group {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.buttons-group button {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.btn-blue-solid {
+    background-color: #008AAA;
+    color: white;
+    border: 1px #008AAA solid;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.btn-blue-outline {
+    color: #008AAA;
+    border: 1px #008AAA solid;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.shadow {
+    box-shadow: -2px 2px 10px 1px rgba(0, 138, 170, .2);
+}
+
+@media (max-width: 768px) {
+    .nav-bar li {
+        margin-right: 20px;
+    }
+
+    .main-page-container {
+        padding: 70px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .intro-title {
+        font-size: 40px;
+    }
+
+    .img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        border-bottom-left-radius: 200px;
+    }
+
+    .img-shadow {
+        box-shadow: -8px 8px 10px 1px rgba(0, 138, 170, 0.2);
+    }
+
+    .buttons-group {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttons-group button {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+}
